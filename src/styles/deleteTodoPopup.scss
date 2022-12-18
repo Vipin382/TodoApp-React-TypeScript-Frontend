@@ -1,0 +1,68 @@
+.DeleteContainer {
+  position: absolute;
+  z-index: 99999999;
+  background-color: rgba(57, 56, 56, 0.2);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transform: scale(0);
+  transition: all 0.5s;
+  justify-content: center;
+  align-items: center;
+}
+.DeleteContainer.active {
+  transform: scale(1);
+}
+.popupMain {
+  background-color: white;
+  position: relative;
+  width: 400px;
+  border-radius: 5px;
+  display: grid;
+  height: 200px;
+}
+.col-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.popupp {
+  font-size: 15px;
+  padding: 10px;
+  display: flex;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.popH3 {
+  font-size: 25px;
+  margin: 0px;
+}
+.col_2 {
+  display: flex;
+}
+button {
+  width: 100%;
+  margin: 4px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+button:nth-child(1) {
+  background-color: #24b907;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+button:nth-child(2) {
+  background-color: #b90715;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+}

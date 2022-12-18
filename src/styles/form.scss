@@ -1,0 +1,22 @@
+.form {
+  min-width: 400px;
+  width: 50%;
+  max-width: 600px;
+  height: 300px;
+  padding: 10px;
+  line-height: 2.2rem;
+}
+.upload {
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgb(9, 134, 46);
+  margin-top: 15px;
+}
+.upload::after {
+  content: "UPLOAD";
+  color: white;
+}

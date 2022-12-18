@@ -1,0 +1,6 @@
+.container {
+  height: 100vh;
+}
+#__next {
+  border: 10px solid red;
+}

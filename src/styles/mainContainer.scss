@@ -1,0 +1,119 @@
+.mainCont {
+  display: grid;
+  grid-template-rows: 1fr 8fr 1fr;
+  width: 100%;
+}
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(209, 203, 203, 0.63);
+  padding: 0px 2rem 0px 2rem;
+  align-items: center;
+}
+.mainHeader > .title {
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  font-weight: 800;
+  color: black;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+.mainOptions {
+  font-size: 3.5rem;
+  color: black;
+  display: flex;
+  gap: 40px;
+}
+.mainSection {
+  padding: 20px;
+  overflow-y: auto;
+}
+.mainSection > .todoItem {
+  background-color: rgba(240, 248, 255, 0.662);
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  height: 60px;
+  display: flex;
+  margin-top: 5px;
+  transition: all 0.3s;
+}
+.mainSection > .todoItem:hover {
+  background-color: rgba(240, 248, 255, 0.905);
+}
+.todoItemsection {
+  display: flex;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  padding: 0 0 0 10px;
+  height: 100%;
+  flex-direction: column;
+  width: 100%;
+}
+.mainCircle {
+  display: flex;
+  font-size: 20px;
+  width: 60px;
+  justify-content: center;
+  cursor: pointer;
+  height: 100%;
+  align-items: center;
+}
+.mainFooter {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  align-items: center;
+}
+.noteContainer {
+  background-color: rgba(240, 248, 255, 0.662);
+  width: 95%;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  gap: 5px;
+  padding: 5px;
+  height: 50px;
+}
+.addNoteicon {
+  cursor: pointer;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+.addNoteText {
+  width: 100%;
+  height: 100%;
+}
+.addNoteicon:hover {
+  background-color: rgb(240, 248, 255);
+  border-radius: 5px;
+}
+.mainInputField {
+  width: 95%;
+  padding: 0px 0px 0px 20px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  height: 100%;
+  font-size: 20px;
+}
+.navBtn {
+  position: absolute;
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .navBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    position: relative;
+    width: 50px;
+  }
+}

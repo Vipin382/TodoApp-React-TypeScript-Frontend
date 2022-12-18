@@ -1,0 +1,20 @@
+.todoContainer {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.videoid {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+.section {
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 179, 255, 0.139);
+}

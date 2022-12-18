@@ -1,0 +1,54 @@
+.navContainer {
+  min-width: 400px;
+  background-color: rgb(231, 232, 232);
+}
+.profileInfo {
+  height: 150px;
+  display: flex;
+  font-weight: lighter;
+  justify-content: space-around;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+}
+.profileImage {
+  position: relative;
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.profileImage img {
+  height: 100%;
+}
+.navBtn {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .navContainer {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: rgb(231, 232, 232);
+  }
+  .active {
+    display: block;
+  }
+  .profileInfo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .profileImage {
+    height: 400px;
+    width: 400px;
+  }
+  .navBtn {
+    width: 40px;
+  }
+}
